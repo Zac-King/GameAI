@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C0E161EF-53FE-4FEC-9EBF-B907D5A02C28}</ProjectGuid>
+    <RootNamespace>bAsIc</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>./dep/inc</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>./dep/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glew32s.lib;glew32mx.lib;glew32mxs.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="dep\cmathutils.h" />
+    <ClInclude Include="dep\crenderutils.h" />
+    <ClInclude Include="dep\render.h" />
+    <ClInclude Include="dep\inc\GLFW\glfw3.h" />
+    <ClInclude Include="dep\inc\GLFW\glfw3native.h" />
+    <ClInclude Include="dep\inc\GL\glew.h" />
+    <ClInclude Include="dep\inc\GL\glxew.h" />
+    <ClInclude Include="dep\inc\GL\wglew.h" />
+    <ClInclude Include="dep\inc\stb\stb.h" />
+    <ClInclude Include="dep\inc\stb\stb_c_lexer.h" />
+    <ClInclude Include="dep\inc\stb\stb_divide.h" />
+    <ClInclude Include="dep\inc\stb\stb_dxt.h" />
+    <ClInclude Include="dep\inc\stb\stb_herringbone_wang_tile.h" />
+    <ClInclude Include="dep\inc\stb\stb_image.h" />
+    <ClInclude Include="dep\inc\stb\stb_image_resize.h" />
+    <ClInclude Include="dep\inc\stb\stb_image_write.h" />
+    <ClInclude Include="dep\inc\stb\stb_perlin.h" />
+    <ClInclude Include="dep\inc\stb\stb_rect_pack.h" />
+    <ClInclude Include="dep\inc\stb\stb_textedit.h" />
+    <ClInclude Include="dep\inc\stb\stb_tilemap_editor.h" />
+    <ClInclude Include="dep\inc\stb\stb_truetype.h" />
+    <ClInclude Include="dep\inc\stb\stretchy_buffer.h" />
+    <ClInclude Include="dep\mat4.h" />
+    <ClInclude Include="dep\shapes.h" />
+    <ClInclude Include="dep\vec2.h" />
+    <ClInclude Include="dep\vec3.h" />
+    <ClInclude Include="dep\vec4.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Graph.h" />
+    <ClInclude Include="Solver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="dep\render.cpp" />
+    <ClCompile Include="dep\mat4.cpp" />
+    <ClCompile Include="dep\shapes.cpp" />
+    <ClCompile Include="dep\vec2.cpp" />
+    <ClCompile Include="dep\vec3.cpp" />
+    <ClCompile Include="dep\vec4.cpp" />
+    <ClCompile Include="Solver.cpp" />
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="dep\lib\glew32.lib" />
+    <Library Include="dep\lib\glew32mx.lib" />
+    <Library Include="dep\lib\glew32mxs.lib" />
+    <Library Include="dep\lib\glew32s.lib" />
+    <Library Include="dep\lib\glfw3.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

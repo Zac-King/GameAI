@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{979f52e9-258a-44b9-8de6-bfca9a7498eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\utilsrc">
+      <UniqueIdentifier>{bdf257e3-a051-4afb-8a62-d2414960a280}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\utilsrc\inc">
+      <UniqueIdentifier>{c216a4af-0b4e-4c99-8cae-a04efd7c1254}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\utilsrc\rend">
+      <UniqueIdentifier>{9162ee76-ef58-4291-9887-97814a2a319a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\utilsrc\math">
+      <UniqueIdentifier>{e0a429de-43ff-4027-8086-ac4f234bca86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\utilsrc\shape">
+      <UniqueIdentifier>{8b1405cb-4096-4c0d-8d16-a13c970195a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dep\inc\GL\glxew.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\GL\glew.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\GLFW\glfw3.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\GLFW\glfw3native.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\stb\stretchy_buffer.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\stb\stb.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\stb\stb_c_lexer.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\stb\stb_divide.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\stb\stb_dxt.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\stb\stb_herringbone_wang_tile.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\stb\stb_image.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\stb\stb_image_resize.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\stb\stb_image_write.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\stb\stb_perlin.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\stb\stb_rect_pack.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\stb\stb_textedit.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\stb\stb_tilemap_editor.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\stb\stb_truetype.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\inc\GL\wglew.h">
+      <Filter>Utilities\utilsrc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\mat4.h">
+      <Filter>Utilities\utilsrc\math</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\render.h">
+      <Filter>Utilities\utilsrc\rend</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\shapes.h">
+      <Filter>Utilities\utilsrc\shape</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\vec2.h">
+      <Filter>Utilities\utilsrc\math</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\vec3.h">
+      <Filter>Utilities\utilsrc\math</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\vec4.h">
+      <Filter>Utilities\utilsrc\math</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\crenderutils.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="dep\cmathutils.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Solver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dep\mat4.cpp">
+      <Filter>Utilities\utilsrc\math</Filter>
+    </ClCompile>
+    <ClCompile Include="dep\render.cpp">
+      <Filter>Utilities\utilsrc\rend</Filter>
+    </ClCompile>
+    <ClCompile Include="dep\shapes.cpp">
+      <Filter>Utilities\utilsrc\shape</Filter>
+    </ClCompile>
+    <ClCompile Include="dep\vec2.cpp">
+      <Filter>Utilities\utilsrc\math</Filter>
+    </ClCompile>
+    <ClCompile Include="dep\vec3.cpp">
+      <Filter>Utilities\utilsrc\math</Filter>
+    </ClCompile>
+    <ClCompile Include="dep\vec4.cpp">
+      <Filter>Utilities\utilsrc\math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Solver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="dep\lib\glew32.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="dep\lib\glew32mx.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="dep\lib\glew32mxs.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="dep\lib\glew32s.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="dep\lib\glfw3.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
