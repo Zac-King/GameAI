@@ -74,7 +74,7 @@ void main()
 	int LastGoal = 0;	int NewGoal = 0;
 	bool newPath = true;
 
-	Entity e(200, g->getPostitions()[0]);
+	Entity e(100, g->getPostitions()[0]);
 
 	std::vector<aabb>bottle;
 	bottle.push_back(aabb(vec2(250, 220), vec2(90, 30)));	// bottom
@@ -115,7 +115,7 @@ void main()
 		// Update Entity (The Circle)
 		e.update(dt);
 		// Draw graph / Entity
-		//g->drawGraph(s, m);
+		g->drawGraph(s, m);
 		e.drawEntity(m, 7);
 		// Draw Obstacles
 		for (int i = 0; i < bottle.size(); ++i)
@@ -128,7 +128,7 @@ void main()
 			//float g = rand() % 2;
 			//float b = rand() % 2;
 			//float w = rand() % 2;
-			draw_line(m, line(e.path[i - 1], e.path[i]), vec4(.7, 0, .6, .8));	
+			draw_line(m, line(e.path[i - 1], e.path[i]), vec4(.7, .7, .6, .8));	
 		}
 		for (int i = 1; i < e.smoothPath.size(); ++i)
 		{
