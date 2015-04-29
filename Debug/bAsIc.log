@@ -1,14 +1,17 @@
-﻿  Source.cpp
-c:\users\zac\desktop\gameai\entity.h(26): warning C4018: '<' : signed/unsigned mismatch
-c:\users\zac\desktop\gameai\entity.h(29): warning C4018: '<' : signed/unsigned mismatch
-c:\users\zac\desktop\gameai\source.cpp(61): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\zac\desktop\gameai\source.cpp(63): warning C4305: 'argument' : truncation from 'double' to 'float'
-c:\users\zac\desktop\gameai\source.cpp(86): warning C4018: '<' : signed/unsigned mismatch
-c:\users\zac\desktop\gameai\source.cpp(92): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-c:\users\zac\desktop\gameai\source.cpp(95): warning C4305: '=' : truncation from 'double' to 'float'
-c:\users\zac\desktop\gameai\source.cpp(104): warning C4018: '<' : signed/unsigned mismatch
-c:\users\zac\desktop\gameai\source.cpp(121): warning C4018: '<' : signed/unsigned mismatch
-c:\users\zac\desktop\gameai\source.cpp(125): warning C4018: '<' : signed/unsigned mismatch
-c:\users\zac\desktop\gameai\source.cpp(131): warning C4305: 'argument' : truncation from 'double' to 'float'
-c:\users\zac\desktop\gameai\source.cpp(133): warning C4018: '<' : signed/unsigned mismatch
-  bAsIc.vcxproj -> C:\Users\Zac\Desktop\GameAI\Debug\bAsIc.exe
+﻿  Entity.cpp
+c:\users\zac\desktop\gameai\entity.h(12): error C2039: 'vector' : is not a member of 'std'
+c:\users\zac\desktop\gameai\entity.h(12): error C2143: syntax error : missing ';' before '<'
+c:\users\zac\desktop\gameai\entity.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\zac\desktop\gameai\entity.h(12): error C2238: unexpected token(s) preceding ';'
+c:\users\zac\desktop\gameai\entity.h(13): error C2039: 'vector' : is not a member of 'std'
+c:\users\zac\desktop\gameai\entity.h(13): error C2143: syntax error : missing ';' before '<'
+c:\users\zac\desktop\gameai\entity.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\zac\desktop\gameai\entity.h(13): error C2238: unexpected token(s) preceding ';'
+c:\users\zac\desktop\gameai\entity.h(26): error C2065: 'smoothPath' : undeclared identifier
+c:\users\zac\desktop\gameai\entity.h(26): error C2228: left of '.size' must have class/struct/union
+          type is 'unknown-type'
+c:\users\zac\desktop\gameai\entity.h(28): error C2065: 'smoothPath' : undeclared identifier
+c:\users\zac\desktop\gameai\entity.h(29): error C2065: 'smoothPath' : undeclared identifier
+c:\users\zac\desktop\gameai\entity.h(29): error C2228: left of '.size' must have class/struct/union
+          type is 'unknown-type'
+c:\users\zac\desktop\gameai\entity.h(30): error C2065: 'smoothPath' : undeclared identifier

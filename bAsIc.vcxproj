@@ -99,6 +99,7 @@
     <ClInclude Include="Solver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Graph.cpp" />
     <ClCompile Include="dep\render.cpp" />
     <ClCompile Include="dep\mat4.cpp" />

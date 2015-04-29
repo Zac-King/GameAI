@@ -115,7 +115,7 @@ void main()
 		// Update Entity (The Circle)
 		e.update(dt);
 		// Draw graph / Entity
-		g->drawGraph(s, m);
+		//g->drawGraph(s, m);
 		e.drawEntity(m, 7);
 		// Draw Obstacles
 		for (int i = 0; i < bottle.size(); ++i)
