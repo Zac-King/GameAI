@@ -7,6 +7,8 @@ class Entity
 {
 	float speed;
 	vec2 pos;
+	vec2 vel;
+	bool roc;
 
 public:
 	int index;

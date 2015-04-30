@@ -1,6 +1,6 @@
 #include "Entity.h"
 
-Entity::Entity(float speed, vec2 pos) : speed(speed), pos(pos)
+Entity::Entity(float speed, vec2 pos) : speed(speed), pos(pos), vel(vec2(0, 0)), roc(false)
 {}
 
 void Entity::drawEntity(mat4 m, float radius)
@@ -19,7 +19,7 @@ void Entity::update(float dt)
 		if (index < smoothPath.size())
 		{
 			//pos += normal(smoothPath[index] - pos) * speed * dt;
-			seek(pos, , smoothPath[index], speed, dt);
+			seek(pos, vel, smoothPath[index], speed, dt);
 		}
 	}
 }
